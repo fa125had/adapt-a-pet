@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Root />}>
           <Route index element={<HomePage />} />
+          <Route path=':type' element={<HomePage />} />
         </Route>
       </Routes>
     </Router>
