@@ -10,7 +10,9 @@ function App() {
   return (
     <Router >
       <Routes>
-        <Route path='/' element={<Root />} />
+        <Route path='/' element={<Root />}>
+          <Route index element={<HomePage />} />
+        </Route>
       </Routes>
     </Router>
   );
