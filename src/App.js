@@ -8,11 +8,12 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <Router >
+    <Router>
       <Routes>
-        <Route path='/' element={<Root />}>
+        <Route path="/" element={<Root />}>
           <Route index element={<HomePage />} />
-          <Route path=':type' element={<HomePage />} />
+          <Route path=":type" element={<HomePage />} />
+          <Route path=":type/:id" element={<PetDetailsPage />} />
         </Route>
       </Routes>
     </Router>
